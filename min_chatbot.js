@@ -1,17 +1,11 @@
-/*
- To change this license header, choose License Headers in Project Properties.
- and open the template in the editor.
- 
- Created on : 10 jun. 2020, 09:54:59
- Author     : roddygahona
- */
-
 var activado = "false";
 window.onload = cargainicialbot;
+
 function cargainicialbot() {
     document.getElementById('webChatIcon').classList.add('latido')
     document.getElementById('botiframe').style.display = 'none'
 }
+
 function showChatWindow() {
     document.getElementById('webChatIcon').classList.remove('latido');
     document.getElementById('webchat').style.visibility = 'visible'
@@ -27,12 +21,12 @@ function hideChatWindow() {
     document.getElementById('avatar-container').style.visibility = 'visible'
     document.getElementById('botiframe').style.display = 'none'
 }
+
 function loadchat() {
     document.getElementById('mensaje_bienvenida').style.display = 'none'
     document.getElementById('botiframe').style.display = ''
     cargabot()    
     activado = "true"
-    //Change to adapt to the GobEc platform
     document.getElementById('logo-cabecera').src = "https://www.gob.ec/sites/default/files/inline-images/pascal.png"
 }
 
@@ -40,7 +34,6 @@ function abrirNuevoTab() {
     var win = window.open('https://www.telecomunicaciones.gob.ec/', '_blank');
     win.focus();
 }
-
 
 function cargabot() {
 

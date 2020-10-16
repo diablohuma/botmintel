@@ -44,7 +44,6 @@ and open the template in the editor.
     border-radius: 2em;
     border-bottom-right-radius: 2em;
     border-bottom-right-radius: 0;
-    height: min-content;
     pointer-events: auto;
     font-size: 14px;
     border: 1px solid #eaeaea;
@@ -230,25 +229,6 @@ and open the template in the editor.
     margin-right: 10px;
 }
 
-/* @media all and (max-width: 840px) {
-    #webchat {
-        width: 300px;
-        overflow: hidden;
-        border-radius: 3px;
-        display: flex;
-        flex-direction: column;
-        position: fixed;
-        height: auto;
-        right: 20px;
-        bottom: 0px;
-        visibility: collapse;
-        z-index: 100000;
-        box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.3), 0 1px 2px 0 rgba(0, 0, 0, 0.1);
-        border-radius: 3px;
-        margin-right: 20px;
-    }
-} */
-
 #mensaje_bienvenida {
     background-color: white;
     width: 100%;
@@ -257,18 +237,13 @@ and open the template in the editor.
 }
 
 #logo-cabecera {
-    /*Change to adapt to the GobEc platform*/
-    /*max-width   : 60px;*/
     max-width: 40px;
     height: auto;
-    /* padding  : 5px;
-    position    : relative; */
 }
 
 #botiframe {
     width: 100%;
     border: none;
-    /* border-radius: 10px; */
     height: 100%;
 }
 
@@ -277,8 +252,6 @@ and open the template in the editor.
     font-weight: bold;
     color: rgb(255, 255, 255);
     margin-left: 0.5em;
-    /*position   : fixed;
-    padding-top  : 5px;*/
 }
 
 #avatar-container {
