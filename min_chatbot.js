@@ -55,7 +55,7 @@ const MarkdownIt = require('markdown-it');
 var MarkdowStyle = require('markdown-it-style);
 
 const markdownIt = new MarkdownIt({ html: false, linkify: true, typographer: true });
-markdownIt .use(markdownStyle, { 'a': 'color: red;' });
+markdownIt .use(markdownStyle, { 'a': 'color: blue;' });
 
 const renderMarkdown = text => markdownIt.render(text);
 
