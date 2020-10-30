@@ -51,13 +51,13 @@ function cargabot() {
          return next(action);
      });
 
-const MarkdownIt = require('markdown-it');
-var MarkdowStyle = require('markdown-it-style);
+    const MarkdownIt = require('markdown-it');
+    var MarkdowStyle = require('markdown-it-style');
 
-const markdownIt = new MarkdownIt({ html: false, linkify: true, typographer: true });
-markdownIt .use(markdownStyle, { 'a': 'color: blue;' });
+    const markdownIt = new MarkdownIt({ html: false, linkify: true, typographer: true });
+    markdownIt .use(markdownStyle, { 'a': 'color: blue;' });
 
-const renderMarkdown = text => markdownIt.render(text);
+    const renderMarkdown = text => markdownIt.render(text);
 
     window.WebChat.renderWebChat(
         {
