@@ -66,7 +66,7 @@ function cargabot() {
                 locale: 'es-ES'
             }),
             store,
-		renderMarkdown,
+		    renderMarkdown,
             sendTypingIndicator: true,
             styleOptions: {
                 hideUploadButton: true,
