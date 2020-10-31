@@ -49,8 +49,7 @@ function cargabot() {
          }
     
          return next(action);
-     });
-  
+     }); 
 
     window.WebChat.renderWebChat(
         {
