@@ -37,19 +37,6 @@ function abrirNuevoTab() {
 
 function cargabot() {
 
-     const store = window.WebChat.createStore({}, ({ dispatch }) => next => action => {
-         if (action.type === 'DIRECT_LINE/CONNECT_FULFILLED') {
-             dispatch({
-                 type: 'WEB_CHAT/SEND_EVENT',
-                 payload: {
-                     name: 'webchat/join',
-                     value: { language: window.navigator.language }
-                 }
-             });
-         }
-    
-         return next(action);
-     }); 
 
     window.WebChat.renderWebChat(
         {
@@ -57,7 +44,6 @@ function cargabot() {
                 token: 'S4Bn8DRkFGI.D8wUYtF_Hvmxa6ryugoLSs3_xT9ITt-6TZ1D2v7vlcQ',                
                 locale: 'es-ES'
             }),
-            store,
             sendTypingIndicator: true,
             styleOptions: {
                 hideUploadButton: true,
