@@ -9,6 +9,10 @@ and open the template in the editor.
     Author     : roddygahona
 */
 
+.markdown a {
+    color: #26506D;
+}
+
 .wc-header {
     background-color: #26506D;
     color: white;
