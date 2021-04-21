@@ -23,7 +23,7 @@ function hideChatWindow() {
 }
 
 function mensaje_ocultar() {
-    document.getElementById('saludobot').style.visibility = 'visible'
+    document.getElementById('saludobot').style.visibility = 'collapse'
 }
 
 function loadchat() {
