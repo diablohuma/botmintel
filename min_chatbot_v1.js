@@ -22,6 +22,10 @@ function hideChatWindow() {
     document.getElementById('botiframe').style.display = 'none'
 }
 
+function mensaje_ocultar() {
+    document.getElementById('saludobot').style.visibility = 'visible'
+}
+
 function loadchat() {
     document.getElementById('mensaje_bienvenida').style.display = 'none'
     document.getElementById('botiframe').style.display = ''
